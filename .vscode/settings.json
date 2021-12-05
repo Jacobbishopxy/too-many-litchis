@@ -1,0 +1,4 @@
+{
+	"rust-analyzer.linkedProjects": ["rs/Cargo.toml"],
+	"cSpell.words": ["inorder", "postorder", "preorder"]
+}
