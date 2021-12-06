@@ -1,7 +1,7 @@
 use std::cell::RefCell;
 use std::rc::Rc;
 
-use rs::TreeNode;
+use tml::TreeNode;
 
 fn main() {
     let root = TreeNode {

@@ -1,6 +1,6 @@
-use rs::TreeNode;
 use std::cell::RefCell;
 use std::rc::Rc;
+use tml::TreeNode;
 
 fn main() {
     let root = Some(Rc::new(RefCell::new(TreeNode::new(1))));

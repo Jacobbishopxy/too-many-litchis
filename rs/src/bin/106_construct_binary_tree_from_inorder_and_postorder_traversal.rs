@@ -1,7 +1,7 @@
 use std::cell::RefCell;
 use std::rc::Rc;
 
-use rs::TreeNode;
+use tml::TreeNode;
 
 fn main() {
     let po = vec![9, 3, 15, 20, 7];
