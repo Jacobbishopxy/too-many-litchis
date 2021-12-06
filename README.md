@@ -1,6 +1,6 @@
 # Too Many Litchi
 
-## [![Rust](https://img.shields.io/badge/Rust-%20?logoColor=white&logo=rust&color=000000)](#rs)
+## [![Rust](https://img.shields.io/badge/Rust-%20?logoColor=white&logo=rust&color=dea584)](#rs)
 
 - [two sum](./rs/src/bin/1_two_sum.rs)
 - [add two numbers](./rs/src/bin/2_add_two_numbers.rs)
@@ -55,3 +55,4 @@
 
 - [populating next right pointers in each node](./go/problems/116_populating_next_right_pointers_in_each_node.go)
 - [pascals triangle](./go/problems/118_pascals_triangle.go)
+- [best time to buy and sell stock](./go/problems/121_best_time_to_buy_and_sell_stock.go)
