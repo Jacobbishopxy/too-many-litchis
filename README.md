@@ -54,3 +54,4 @@
 ## [![Golang](https://img.shields.io/badge/Golang-%20?&logo=go&logoColor=white&color=00a7d0)](#go)
 
 - [populating next right pointers in each node](./go/problems/116_populating_next_right_pointers_in_each_node.go)
+- [pascals triangle](./go/problems/118_pascals_triangle.go)

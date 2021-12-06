@@ -10,11 +10,11 @@ import (
 /*
 go test -v 116_test.go
 */
-func TestFoo(t *testing.T) {
+func Test116(t *testing.T) {
 
 	node := util.NewNodeFromVals([]int{1, 2, 3, 4, 5, 6, 7})
 
-	n := Connect(node)
+	n := Connect_116(node)
 
 	fmt.Printf("%+v", n.Val)
 }

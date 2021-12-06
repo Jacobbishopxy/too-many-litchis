@@ -2,7 +2,7 @@ package problems
 
 import "tml/util"
 
-func Connect(root *util.Node) *util.Node {
+func Connect_116(root *util.Node) *util.Node {
 	if root == nil {
 		return root
 	}
