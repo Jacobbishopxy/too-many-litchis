@@ -50,9 +50,11 @@
 - [construct binary tree from preorder and inorder traversal](./rs/src/bin/105_construct_binary_tree_from_preorder_and_inorder_traversal.rs)
 - [construct binary tree from inorder and postorder traversal](./rs/src/bin/106_construct_binary_tree_from_inorder_and_postorder_traversal.rs)
 - [convert sorted array to binary search tree](./rs/src/bin/108_convert_sorted_array_to_binary_search_tree.rs)
+- [best time to buy and sell stock ii](./rs/src/bin/122_best_time_to_buy_and_sell_stock_ii.rs)
 
 ## [![Golang](https://img.shields.io/badge/Golang-%20?&logo=go&logoColor=white&color=00a7d0)](#go)
 
 - [populating next right pointers in each node](./go/problems/116_populating_next_right_pointers_in_each_node.go)
 - [pascals triangle](./go/problems/118_pascals_triangle.go)
 - [best time to buy and sell stock](./go/problems/121_best_time_to_buy_and_sell_stock.go)
+- [best time to buy and sell stock ii](./go/problems/122_best_time_to_buy_and_sell_stock_ii.go)
