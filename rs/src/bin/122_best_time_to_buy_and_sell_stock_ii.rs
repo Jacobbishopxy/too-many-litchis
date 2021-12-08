@@ -13,10 +13,13 @@ fn main() {
 }
 
 fn max_profit(prices: Vec<i32>) -> i32 {
-    let mut res = 0;
-    for i in 1..prices.len() {
-        let diff = prices[i] - prices[i - 1];
-        res += if 0 > diff { 0 } else { diff };
+    let n = prices.len();
+    let (mut dp0, mut dp1) = (0, -prices[0]);
+
+    for i in 1..n {
+        dp0 = dp0.max(dp1 + prices[i]);
+        dp1 = dp1.max(dp0 - prices[i]);
     }
-    res
+
+    dp0
 }

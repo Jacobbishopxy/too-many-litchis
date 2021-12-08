@@ -51,6 +51,7 @@
 - [construct binary tree from inorder and postorder traversal](./rs/src/bin/106_construct_binary_tree_from_inorder_and_postorder_traversal.rs)
 - [convert sorted array to binary search tree](./rs/src/bin/108_convert_sorted_array_to_binary_search_tree.rs)
 - [best time to buy and sell stock ii](./rs/src/bin/122_best_time_to_buy_and_sell_stock_ii.rs)
+- [binary tree maximum path sum](./rs/src/bin/124_binary_tree_maximum_path_sum.rs)
 
 ## [![Golang](https://img.shields.io/badge/Golang-%20?&logo=go&logoColor=white&color=00a7d0)](#go)
 
