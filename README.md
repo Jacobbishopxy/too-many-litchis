@@ -59,3 +59,4 @@
 - [pascals triangle](./go/problems/118_pascals_triangle.go)
 - [best time to buy and sell stock](./go/problems/121_best_time_to_buy_and_sell_stock.go)
 - [best time to buy and sell stock ii](./go/problems/122_best_time_to_buy_and_sell_stock_ii.go)
+- [binary tree maximum path sum](./go/problems/124_binary_tree_maximum_path_sum.go)
