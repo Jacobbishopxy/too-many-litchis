@@ -1,13 +1,13 @@
 fn main() {
-    let foo = vec![vec![1, 2, 3, 4], vec![5, 6, 7, 8], vec![9, 10, 11, 12]];
+    let v = vec![vec![1, 2, 3, 4], vec![5, 6, 7, 8], vec![9, 10, 11, 12]];
 
-    println!("result: {:?}", spiral_order(foo));
+    println!("result: {:?}", spiral_order(v));
 }
 
 pub fn spiral_order(matrix: Vec<Vec<i32>>) -> Vec<i32> {
     let mut res = vec![];
 
-    if matrix.len() == 0 || matrix[0].len() == 0 {
+    if matrix.is_empty() || matrix[0].is_empty() {
         return res;
     }
 
@@ -19,8 +19,8 @@ pub fn spiral_order(matrix: Vec<Vec<i32>>) -> Vec<i32> {
             res.push(matrix[top][i]);
         }
 
-        for i in (top + 1)..=bottom {
-            res.push(matrix[i][right]);
+        for i in matrix.iter().take(bottom + 1).skip(top + 1) {
+            res.push(i[right]);
         }
         if left < right && top < bottom {
             for i in ((left + 1)..=(right - 1)).rev() {

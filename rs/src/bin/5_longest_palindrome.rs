@@ -1,7 +1,7 @@
 fn main() {
-    let foo = String::from("a");
+    let res = String::from("a");
 
-    println!("result: {:?}", longest_palindrome(foo));
+    println!("result: {:?}", longest_palindrome(res));
 }
 
 pub fn longest_palindrome(s: String) -> String {
@@ -11,7 +11,7 @@ pub fn longest_palindrome(s: String) -> String {
     loop {
         for idx in 0..=s.len() {
             if check_if_palindrome(&s[0..idx]) && lp.len() < idx {
-                lp = (s[0..idx]).iter().cloned().collect();
+                lp = (s[0..idx]).to_vec();
             }
         }
 

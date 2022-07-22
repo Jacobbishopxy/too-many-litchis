@@ -17,15 +17,19 @@ pub fn find_median_sorted_arrays(nums1: Vec<i32>, nums2: Vec<i32>) -> f64 {
     let mut cache = std::collections::VecDeque::from_iter(nums1);
 
     loop {
-        if cache.len() > 2 {
-            cache.pop_front();
-            cache.pop_back();
-        } else if cache.len() == 2 {
-            let c = cache.pop_front().unwrap() + cache.pop_back().unwrap();
-            return (c as f64) / (2 as f64);
-        } else {
-            let c = cache.pop_back().unwrap();
-            return c as f64;
+        match cache.len() {
+            2 => {
+                let c = cache.pop_front().unwrap() + cache.pop_back().unwrap();
+                return (c as f64) / 2f64;
+            }
+            n if n > 2 => {
+                cache.pop_front();
+                cache.pop_back();
+            }
+            _ => {
+                let c = cache.pop_back().unwrap();
+                return c as f64;
+            }
         }
     }
 }

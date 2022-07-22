@@ -33,6 +33,4 @@ fn max_depth_traverse(root: Option<Rc<RefCell<TreeNode>>>, depth: i32, res: &mut
         max_depth_traverse(rt.borrow().left.clone(), depth + 1, res);
         max_depth_traverse(rt.borrow().right.clone(), depth + 1, res);
     }
-
-    return;
 }

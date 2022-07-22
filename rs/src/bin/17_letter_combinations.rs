@@ -17,9 +17,9 @@ fn main() {
 
     let lc = LC(map);
 
-    let foo = "23".to_string();
+    let res = "23".to_string();
 
-    println!("result: {:?}", lc.letter_combinations(foo));
+    println!("result: {:?}", lc.letter_combinations(res));
 }
 
 pub struct LC(HashMap<char, &'static str>);
@@ -27,12 +27,12 @@ pub struct LC(HashMap<char, &'static str>);
 impl LC {
     fn recursive<'a>(&self, s: &str, res: &mut Vec<String>, buf: &mut Vec<&'a str>) {
         // println!("0. {:?} | {:?}", res, buf);
-        let current = if let Some(i) = s.chars().nth(0) {
+        let current = if let Some(i) = s.chars().next() {
             i
         } else {
             // 当 res 为空且 buf 不为空时，将 buf 所有数据传入 res 并结束 recursive
             if !buf.is_empty() {
-                res.push(buf.iter().map(|&s| s).collect());
+                res.push(buf.iter().copied().collect());
             }
             return;
         };

@@ -10,7 +10,7 @@ impl ListNode {
     }
 
     pub fn from_vec(vs: Vec<i32>) -> Option<Box<ListNode>> {
-        if vs.len() == 0 {
+        if vs.is_empty() {
             return None;
         }
 

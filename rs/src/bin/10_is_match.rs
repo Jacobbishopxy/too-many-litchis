@@ -11,7 +11,7 @@ pub fn is_match(s: String, p: String) -> bool {
             return s.is_empty();
         }
 
-        let m = { s.len() > 0 && (s.as_bytes()[0] == p.as_bytes()[0] || p.as_bytes()[0] == 46) };
+        let m = { !s.is_empty() && (s.as_bytes()[0] == p.as_bytes()[0] || p.as_bytes()[0] == 46) };
         if p.len() >= 2 && p.as_bytes()[1] == 42 {
             return is_match_str(s, &p[2..]) || (m && is_match_str(&s[1..], p));
         }

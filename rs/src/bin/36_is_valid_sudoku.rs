@@ -1,5 +1,5 @@
 fn main() {
-    let foo = vec![
+    let res = vec![
         vec!['5', '3', '.', '.', '7', '.', '.', '.', '.'],
         vec!['6', '.', '.', '1', '9', '5', '.', '.', '.'],
         vec!['.', '9', '8', '.', '.', '.', '.', '6', '.'],
@@ -11,7 +11,7 @@ fn main() {
         vec!['.', '.', '.', '.', '8', '.', '.', '7', '9'],
     ];
 
-    println!("result: {}", is_valid_sudoku(foo));
+    println!("result: {}", is_valid_sudoku(res));
 }
 
 pub fn is_valid_sudoku(board: Vec<Vec<char>>) -> bool {
@@ -30,7 +30,7 @@ pub fn is_valid_sudoku(board: Vec<Vec<char>>) -> bool {
     true
 }
 
-fn is_valid_vec(v: &Vec<char>) -> bool {
+fn is_valid_vec(v: &[char]) -> bool {
     let mut cache = vec![];
 
     for &i in v.iter() {
@@ -46,9 +46,9 @@ fn is_valid_vec(v: &Vec<char>) -> bool {
     true
 }
 
-fn is_valid_matrix(v: &Vec<Vec<char>>) -> bool {
+fn is_valid_matrix(v: &[Vec<char>]) -> bool {
     for l in v.iter() {
-        if is_valid_vec(l) == false {
+        if !is_valid_vec(l) {
             return false;
         }
     }
@@ -59,11 +59,11 @@ fn is_valid_matrix(v: &Vec<Vec<char>>) -> bool {
 fn sudoku_transpose(v: Vec<Vec<char>>) -> Vec<Vec<char>> {
     let mut res = vec![vec!['.'; 9]; 9];
 
-    for i in 0..9 {
-        for j in 0..9 {
+    (0..9).for_each(|i| {
+        (0..9).for_each(|j| {
             res[j][i] = v[i][j];
-        }
-    }
+        });
+    });
 
     res
 }

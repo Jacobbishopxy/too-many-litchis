@@ -1,10 +1,10 @@
 use std::collections::HashMap;
 
 fn main() {
-    let mut foo = vec!["eat", "tea", "tan", "ate", "nat", "bat"];
-    let foo = foo.iter_mut().map(|x| x.to_string()).collect();
+    let mut v = vec!["eat", "tea", "tan", "ate", "nat", "bat"];
+    let res = v.iter_mut().map(|x| x.to_string()).collect();
 
-    println!("result: {:?}", group_anagrams(foo));
+    println!("result: {:?}", group_anagrams(res));
 }
 
 pub fn group_anagrams(strs: Vec<String>) -> Vec<Vec<String>> {

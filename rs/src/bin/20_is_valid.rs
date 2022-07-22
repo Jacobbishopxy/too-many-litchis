@@ -1,9 +1,9 @@
 use std::collections::HashMap;
 
 fn main() {
-    let foo = "[".to_string();
+    let res = "[".to_string();
 
-    println!("result: {}", is_valid(foo));
+    println!("result: {}", is_valid(res));
 }
 
 pub fn is_valid(s: String) -> bool {
@@ -38,9 +38,5 @@ pub fn is_valid(s: String) -> bool {
         }
     }
 
-    if cache.len() != 0 {
-        false
-    } else {
-        true
-    }
+    cache.is_empty()
 }

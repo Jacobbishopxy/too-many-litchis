@@ -5,9 +5,9 @@ fn main() {
     let a2 = ListNode::from_vec(vec![1, 3, 4]);
     let a3 = ListNode::from_vec(vec![2, 6]);
 
-    let foo = vec![a1, a2, a3];
+    let res = vec![a1, a2, a3];
 
-    println!("result: {:?}", merge_k_lists(foo));
+    println!("result: {:?}", merge_k_lists(res));
 }
 
 pub fn merge_k_lists(mut lists: Vec<Option<Box<ListNode>>>) -> Option<Box<ListNode>> {

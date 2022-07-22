@@ -1,13 +1,13 @@
 use std::cmp::{max, min};
 fn main() {
-    // let foo = vec![1, 8, 6, 2, 5, 4, 8, 3, 7];
-    let foo = vec![1, 1];
+    // let res = vec![1, 8, 6, 2, 5, 4, 8, 3, 7];
+    let res = vec![1, 1];
 
-    println!("result: {}", max_area(foo));
+    println!("result: {}", max_area(res));
 }
 
 pub fn max_area(height: Vec<i32>) -> i32 {
-    let (mut left, mut right) = (0 as usize, (height.len() - 1) as usize);
+    let (mut left, mut right) = (0usize, (height.len() - 1) as usize);
 
     if right == 0 {
         return 0;

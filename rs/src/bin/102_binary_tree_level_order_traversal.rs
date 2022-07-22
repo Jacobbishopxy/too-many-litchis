@@ -42,6 +42,4 @@ fn level_order_traverse(
         level_order_traverse(rt.borrow().left.clone(), depth + 1, res);
         level_order_traverse(rt.borrow().right.clone(), depth + 1, res);
     }
-
-    return;
 }

@@ -1,7 +1,7 @@
 fn main() {
-    let foo = 1534236469;
+    let res = 1534236469;
 
-    println!("result: {}", reverse(foo));
+    println!("result: {}", reverse(res));
 }
 
 pub fn reverse(x: i32) -> i32 {

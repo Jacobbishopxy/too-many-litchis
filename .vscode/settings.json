@@ -1,6 +1,6 @@
 {
 	"rust-analyzer.linkedProjects": ["rs/Cargo.toml"],
-	"cSpell.words": ["inorder", "postorder", "preorder", "Vals"],
+	"cSpell.words": ["inorder", "nums", "postorder", "preorder", "strs", "Vals"],
 	"go.testFlags": ["-v"],
 	"gopls": {
 		"experimentalWorkspaceModule": true

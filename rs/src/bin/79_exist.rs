@@ -61,13 +61,15 @@ impl S {
 
         for (di, dj) in self.directions.clone().iter() {
             let (new_i, new_j) = (i + di, j + dj);
-            if 0 <= new_i && new_i < self.size.0 && 0 <= new_j && new_j < self.size.1 {
-                if !self.visited[new_i as usize][new_j as usize] {
-                    if self.check(new_i, new_j, k + 1) {
-                        result = true;
-                        break;
-                    }
-                }
+            if 0 <= new_i
+                && new_i < self.size.0
+                && 0 <= new_j
+                && new_j < self.size.1
+                && !self.visited[new_i as usize][new_j as usize]
+                && self.check(new_i, new_j, k + 1)
+            {
+                result = true;
+                break;
             }
         }
 

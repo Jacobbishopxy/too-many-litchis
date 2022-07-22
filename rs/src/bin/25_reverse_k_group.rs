@@ -10,9 +10,9 @@ fn main() {
     println!("{:?}", ans);
 }
 
-type OBL = Option<Box<ListNode>>;
+type Obl = Option<Box<ListNode>>;
 
-pub fn reverse_k_group(mut head: OBL, k: i32) -> OBL {
+pub fn reverse_k_group(mut head: Obl, k: i32) -> Obl {
     let mut tail = &mut head;
     for _ in 0..k {
         match tail.as_mut() {
@@ -28,7 +28,7 @@ pub fn reverse_k_group(mut head: OBL, k: i32) -> OBL {
     reverse(head, tail)
 }
 
-fn reverse(mut head: OBL, mut tail: OBL) -> OBL {
+fn reverse(mut head: Obl, mut tail: Obl) -> Obl {
     while let Some(mut node) = head {
         head = node.next.take();
 

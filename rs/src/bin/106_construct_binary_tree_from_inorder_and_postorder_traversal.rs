@@ -12,7 +12,7 @@ fn main() {
 
 fn build_tree(inorder: Vec<i32>, postorder: Vec<i32>) -> Option<Rc<RefCell<TreeNode>>> {
     let len = inorder.len() as i32 - 1;
-    return build(&inorder, 0, len, &postorder, 0, len);
+    build(&inorder, 0, len, &postorder, 0, len)
 }
 
 fn build(
@@ -40,5 +40,5 @@ fn build(
     root.left = build(inorder, il, rootin - 1, postorder, pl, pl + l - 1);
     root.right = build(inorder, rootin + 1, ir, postorder, pl + l, pr - 1);
 
-    return Some(Rc::new(RefCell::new(root)));
+    Some(Rc::new(RefCell::new(root)))
 }

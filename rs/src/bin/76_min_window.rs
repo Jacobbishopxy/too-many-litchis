@@ -81,9 +81,9 @@ pub fn min_window_ok(s: String, t: String) -> String {
     let (mut min_width, mut min_start, mut wnd_start, mut appeared) = (std::i32::MAX, 0, 0, 0);
 
     let ss: Vec<usize> = s.chars().map(|x| (x as u32) as usize).collect();
-    let mut itr = ss.iter().enumerate();
+    let itr = ss.iter().enumerate();
 
-    while let Some(x) = itr.next() {
+    for x in itr {
         // let idx = cvt(x.1) as usize;
         let idx = *x.1;
         if ec[idx] > 0 {
@@ -94,9 +94,9 @@ pub fn min_window_ok(s: String, t: String) -> String {
         }
 
         if appeared == t.len() {
-            // let mut tmp = s.chars().skip(wnd_start as usize);
-            let mut tmp = ss.iter().skip(wnd_start as usize);
-            while let Some(y) = tmp.next() {
+            // let  tmp = s.chars().skip(wnd_start as usize);
+            let tmp = ss.iter().skip(wnd_start as usize);
+            for y in tmp {
                 // let idx = cvt(y) as usize;
                 let idx = *y;
                 if (ac[idx] > ec[idx]) || (ec[idx] == 0) {

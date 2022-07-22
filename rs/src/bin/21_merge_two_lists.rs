@@ -1,11 +1,11 @@
 use tml::ListNode;
 
 fn main() {
-    let foo = ListNode::from_vec(vec![1, 2, 4]);
-    let bar = ListNode::from_vec(vec![1, 3, 4]);
+    let res1 = ListNode::from_vec(vec![1, 2, 4]);
+    let res2 = ListNode::from_vec(vec![1, 3, 4]);
 
-    println!("result {:?}", merge_two_lists(foo.clone(), bar.clone()));
-    println!("result {:?}", Solution2::merge_two_lists(foo, bar));
+    println!("result {:?}", merge_two_lists(res1.clone(), res2.clone()));
+    println!("result {:?}", Solution2::merge_two_lists(res1, res2));
 }
 
 pub fn merge_two_lists(

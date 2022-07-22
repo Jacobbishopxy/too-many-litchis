@@ -1,9 +1,9 @@
 fn main() {
-    // let foo = vec![-1, 0, 1, 2, -1, -4];
-    // let foo = vec![-4, -1, -1, 0, 1, 2];
-    let foo = vec![-4, -2, -2, -2, 0, 1, 2, 2, 2, 3, 3, 4, 4, 6, 6];
+    // let res = vec![-1, 0, 1, 2, -1, -4];
+    // let res = vec![-4, -1, -1, 0, 1, 2];
+    let res = vec![-4, -2, -2, -2, 0, 1, 2, 2, 2, 3, 3, 4, 4, 6, 6];
 
-    println!("result: {:?}", three_sum(foo));
+    println!("result: {:?}", three_sum(res));
 }
 
 pub fn three_sum(nums: Vec<i32>) -> Vec<Vec<i32>> {

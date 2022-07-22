@@ -21,9 +21,7 @@ pub fn inorder_traversal(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<i32> {
 fn inorder(tree_node: Option<Rc<RefCell<TreeNode>>>, res: &mut Vec<i32>) {
     if let Some(r) = tree_node {
         inorder(r.borrow().left.clone(), res);
-        res.push(r.borrow().val.clone());
+        res.push(r.borrow().val);
         inorder(r.borrow().right.clone(), res);
     }
-
-    return;
 }

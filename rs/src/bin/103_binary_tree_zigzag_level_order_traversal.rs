@@ -47,6 +47,4 @@ fn zigzag_level_order_traverse(
         zigzag_level_order_traverse(rt.borrow().left.clone(), depth + 1, res);
         zigzag_level_order_traverse(rt.borrow().right.clone(), depth + 1, res);
     }
-
-    return;
 }

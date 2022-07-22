@@ -1,10 +1,10 @@
 use tml::ListNode;
 
 fn main() {
-    let foo = ListNode::from_vec(vec![1, 2, 3, 4, 5]);
+    let res = ListNode::from_vec(vec![1, 2, 3, 4, 5]);
 
-    println!("result: {:?}", foo);
-    println!("result: {:?}", remove_nth_from_end(foo, 2));
+    println!("result: {:?}", res);
+    println!("result: {:?}", remove_nth_from_end(res, 2));
 }
 
 fn remove(head: Option<Box<ListNode>>, n: i32) -> (Option<Box<ListNode>>, i32) {
@@ -21,9 +21,7 @@ fn remove(head: Option<Box<ListNode>>, n: i32) -> (Option<Box<ListNode>>, i32) {
             };
             (res, tail_idx + 1)
         }
-        None => {
-            return (None, 1);
-        }
+        None => (None, 1),
     }
 }
 

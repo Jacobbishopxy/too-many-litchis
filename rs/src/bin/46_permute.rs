@@ -1,7 +1,7 @@
 fn main() {
-    let foo = vec![1, 2, 3];
+    let res = vec![1, 2, 3];
 
-    println!("{:?}", permute(foo));
+    println!("{:?}", permute(res));
 }
 
 /// 作者：xue-bu-wan-bu-gai-ming

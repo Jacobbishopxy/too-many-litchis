@@ -1,12 +1,11 @@
 use std::cmp::max;
 
 fn main() {
-    let foo = vec![-2, 1, -3, 4, -1, 2, 1, -5, 4];
-    let bar = foo.clone();
+    let v = vec![-2, 1, -3, 4, -1, 2, 1, -5, 4];
 
     // `max_sub_array` consumes less memory
-    println!("{:?}", max_sub_array(foo));
-    println!("{:?}", max_sub_array_2(bar));
+    println!("{:?}", max_sub_array(v.clone()));
+    println!("{:?}", max_sub_array_2(v));
 }
 
 pub fn max_sub_array(nums: Vec<i32>) -> i32 {

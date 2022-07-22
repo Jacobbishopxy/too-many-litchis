@@ -11,7 +11,7 @@ pub fn my_pow(x: f64, n: i32) -> f64 {
     }
 
     let mut x = x;
-    let mut n_abs = n.abs() as u32;
+    let mut n_abs = n.unsigned_abs();
     let mut ans = 1_f64;
 
     while n_abs > 0 {

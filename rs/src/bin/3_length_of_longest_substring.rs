@@ -1,7 +1,7 @@
 fn main() {
-    let foo = "pwwkew".to_string();
+    let res = "pwwkew".to_string();
 
-    println!("{}", length_of_longest_substring(foo));
+    println!("{}", length_of_longest_substring(res));
 }
 
 pub fn length_of_longest_substring(s: String) -> i32 {

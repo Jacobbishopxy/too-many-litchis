@@ -1,14 +1,14 @@
 fn main() {
-    let mut foo = vec![
+    let mut res = vec![
         vec![5, 1, 9, 11],
         vec![2, 4, 8, 10],
         vec![13, 3, 6, 7],
         vec![15, 14, 12, 16],
     ];
 
-    rotate(&mut foo);
+    rotate(&mut res);
 
-    println!("result: {:?}", foo);
+    println!("result: {:?}", res);
 }
 
 pub fn rotate(matrix: &mut Vec<Vec<i32>>) {
@@ -22,9 +22,7 @@ pub fn rotate(matrix: &mut Vec<Vec<i32>>) {
         }
     }
 
-    let mut count = 0;
-
-    for i in 0..s {
+    for (count, i) in (0..s).enumerate() {
         let mut j = count;
         loop {
             if j > s - 1 {
@@ -36,6 +34,5 @@ pub fn rotate(matrix: &mut Vec<Vec<i32>>) {
             }
             j += 1;
         }
-        count += 1;
     }
 }
