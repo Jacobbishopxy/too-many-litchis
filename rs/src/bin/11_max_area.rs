@@ -7,7 +7,7 @@ fn main() {
 }
 
 pub fn max_area(height: Vec<i32>) -> i32 {
-    let (mut left, mut right) = (0usize, (height.len() - 1) as usize);
+    let (mut left, mut right) = (0usize, height.len() - 1);
 
     if right == 0 {
         return 0;

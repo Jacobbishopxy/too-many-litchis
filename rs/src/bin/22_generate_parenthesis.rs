@@ -23,7 +23,7 @@ impl S {
         }
 
         // 左括号不满时
-        if left < self.n as i32 {
+        if left < self.n {
             str.push('(');
             self.dfs(left + 1, right, str);
             str.pop();

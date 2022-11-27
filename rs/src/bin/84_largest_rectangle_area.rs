@@ -15,9 +15,8 @@ pub fn largest_rectangle_area(heights: Vec<i32>) -> i32 {
     let mut mono_stack: Vec<usize> = vec![];
 
     for i in 0..n {
-        while !mono_stack.is_empty() && heights[*mono_stack.last().unwrap() as usize] >= heights[i]
-        {
-            right[*mono_stack.last().unwrap() as usize] = i as i32;
+        while !mono_stack.is_empty() && heights[*mono_stack.last().unwrap()] >= heights[i] {
+            right[*mono_stack.last().unwrap()] = i as i32;
             mono_stack.pop();
         }
 

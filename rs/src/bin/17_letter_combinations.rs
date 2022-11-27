@@ -25,7 +25,7 @@ fn main() {
 pub struct LC(HashMap<char, &'static str>);
 
 impl LC {
-    fn recursive<'a>(&self, s: &str, res: &mut Vec<String>, buf: &mut Vec<&'a str>) {
+    fn recursive(&self, s: &str, res: &mut Vec<String>, buf: &mut Vec<&str>) {
         // println!("0. {:?} | {:?}", res, buf);
         let current = if let Some(i) = s.chars().next() {
             i

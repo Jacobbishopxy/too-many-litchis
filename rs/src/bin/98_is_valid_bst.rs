@@ -24,12 +24,11 @@ pub fn is_valid_bst(root: Option<Rc<RefCell<TreeNode>>>) -> bool {
 fn recursive(root: &Option<Rc<RefCell<TreeNode>>>, lower: i64, upper: i64) -> bool {
     match root {
         Some(r) => {
-            let val: i64 = r.borrow().val as i64;
-            if val as i64 <= lower || val as i64 >= upper {
+            let val = r.borrow().val as i64;
+            if val <= lower || val >= upper {
                 false
             } else {
-                recursive(&r.borrow().left, lower, val as i64)
-                    && recursive(&r.borrow().right, val as i64, upper)
+                recursive(&r.borrow().left, lower, val) && recursive(&r.borrow().right, val, upper)
             }
         }
         None => true,
