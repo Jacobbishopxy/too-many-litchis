@@ -4,5 +4,12 @@
 	"go.testFlags": ["-v"],
 	"gopls": {
 		"experimentalWorkspaceModule": true
+	},
+	"files.associations": {
+		"*.tsx": "typescriptreact",
+		"__hash_table": "cpp",
+		"__tree": "cpp",
+		"set": "cpp",
+		"vector": "cpp"
 	}
 }
