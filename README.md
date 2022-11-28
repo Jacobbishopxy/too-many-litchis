@@ -64,3 +64,4 @@
 ## ![C++](https://img.shields.io/badge/C++-%20?&logo=c%2B%2B&logoColor=white&color=f34B7d)
 
 - [longest consecutive](./cpp/128_longest_consecutive.cpp)
+- [sum numbers](./cpp/129_sum_numbers.cpp)
