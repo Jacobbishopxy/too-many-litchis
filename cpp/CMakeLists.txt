@@ -1,6 +1,7 @@
 
 add_executable(
   lc
+  33_search.cpp
   34_search_range.cpp
   128_longest_consecutive.cpp
   129_sum_numbers.cpp

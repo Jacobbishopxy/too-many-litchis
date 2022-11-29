@@ -63,6 +63,7 @@
 
 ## ![C++](https://img.shields.io/badge/C++-%20?&logo=c%2B%2B&logoColor=white&color=f34B7d)
 
+- [search](./cpp/33_search.cpp.cpp)
 - [search range](./cpp/34_search_range.cpp)
 - [longest consecutive](./cpp/128_longest_consecutive.cpp)
 - [sum numbers](./cpp/129_sum_numbers.cpp)
