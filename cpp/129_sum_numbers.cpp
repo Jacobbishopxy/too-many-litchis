@@ -1,8 +1,6 @@
 #include "TreeNode.h"
 #include <catch2/catch_test_macros.hpp>
 
-using namespace std;
-
 int recursion(TreeNode* root, int p)
 {
   if (!root)

@@ -3,6 +3,7 @@ add_executable(
   lc
   128_longest_consecutive.cpp
   129_sum_numbers.cpp
+  134_gas_station.cpp
 )
 
 target_link_libraries(
