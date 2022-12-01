@@ -12,6 +12,7 @@ bool searchMatrix(const vector<vector<int>>& matrix, int target)
   {
     int mid{(bottom - top) / 2 + top};
 
+    // 拉平 m * n 矩阵为头尾相连的数组，mid % n 为原始列位置
     int x{matrix[mid / n][mid % n]};
     if (x == target)
       return true;

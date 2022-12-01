@@ -6,4 +6,4 @@
 
 1. `make`: build test cases
 
-1. `cpp/lc lc34 -s`: test specific case by tag(for `Catch2`)
+1. `cpp/lc lc34 -s`: test specific case by name(by `Catch2`)

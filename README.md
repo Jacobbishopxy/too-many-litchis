@@ -69,3 +69,4 @@
 - [longest consecutive](./cpp/128_longest_consecutive.cpp)
 - [sum numbers](./cpp/129_sum_numbers.cpp)
 - [gas station](./cpp/134_gas_station.cpp)
+- [search min](./cpp/153_search_min.cpp)
