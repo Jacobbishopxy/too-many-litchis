@@ -70,3 +70,4 @@
 - [sum numbers](./cpp/129_sum_numbers.cpp)
 - [gas station](./cpp/134_gas_station.cpp)
 - [search min](./cpp/153_search_min.cpp)
+- [find peak element](./cpp/162_find_peak_element.cpp)

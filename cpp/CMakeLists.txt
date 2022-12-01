@@ -8,6 +8,7 @@ add_executable(
   129_sum_numbers.cpp
   134_gas_station.cpp
   153_search_min.cpp
+  162_find_peak_element.cpp
 )
 
 target_link_libraries(
