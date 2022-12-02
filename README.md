@@ -63,7 +63,8 @@
 
 ## ![C++](https://img.shields.io/badge/C++-%20?&logo=c%2B%2B&logoColor=white&color=f34B7d)
 
-- [search](./cpp/33_search.cpp.cpp)
+- [three sum](./cpp/15_three_sum.cpp.cpp)
+- [search](./cpp/33_search.cpp)
 - [search range](./cpp/34_search_range.cpp)
 - [search matrix](./cpp/74_search_matrix.cpp)
 - [delete duplicates](./cpp/82_delete_duplicates.cpp)

@@ -1,6 +1,7 @@
 
 add_executable(
   lc
+  15_three_sum.cpp
   33_search.cpp
   34_search_range.cpp
   74_search_matrix.cpp
