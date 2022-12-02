@@ -66,6 +66,7 @@
 - [search](./cpp/33_search.cpp.cpp)
 - [search range](./cpp/34_search_range.cpp)
 - [search matrix](./cpp/74_search_matrix.cpp)
+- [delete duplicates](./cpp/82_delete_duplicates.cpp)
 - [longest consecutive](./cpp/128_longest_consecutive.cpp)
 - [sum numbers](./cpp/129_sum_numbers.cpp)
 - [gas station](./cpp/134_gas_station.cpp)
